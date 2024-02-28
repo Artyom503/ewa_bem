@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lekcje śpiewu z Ewą Bem</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/theme-styles.min.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    @keyframes hideLoader {
+      0% {
+        width: 100%;
+        height: 100%;
+      }
+
+      100% {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    body>div.loader {
+      position: fixed;
+      background: white;
+      width: 100%;
+      height: 100%;
+      z-index: 1071;
+      opacity: 0;
+      transition: opacity .5s ease;
+      overflow: hidden;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body:not(.loaded)>div.loader {
+      opacity: 1;
+    }
+
+    body:not(.loaded) {
+      overflow: hidden;
+    }
+
+    body.loaded>div.loader {
+      animation: hideLoader .5s linear .5s forwards;
+    }
+
+    /* Typing Animation */
+    .loading-animation {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      animation: typing 1s linear infinite alternate;
+      position: relative;
+      left: -12px;
+    }
+
+    @keyframes typing {
+      0% {
+        background-color: rgba(100, 100, 100, 1);
+        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2),
+          24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+      }
+
+      25% {
+        background-color: rgba(100, 100, 100, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 2),
+          24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+      }
+
+      75% {
+        background-color: rgba(100, 100, 100, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2),
+          24px 0px 0px 0px rgba(100, 100, 100, 1);
+      }
+    }
+  </style>
+</head>
+
+<body class="loaded">
+  <div class="loader">
+    <div class="loading-animation"></div>
+  </div>
+  <div class="navbar-container ">
+    <nav class="navbar navbar-expand-lg navbar-dark" data-overlay="" data-sticky="top">
+      <div class="container">
+        <a class="navbar-brand fade-page" href="/">
+          Ewą Bem
+        </a>
+        <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="icon navbar-toggler-open" src="images/menu.svg" alt="menu interface icon" data-inject-svg="">
+            <img class="icon navbar-toggler-close" src="images/cross.svg" alt="cross interface icon" data-inject-svg="">
+          </button> -->
+        <div class="collapse navbar-collapse justify-content-end">
+          <div class="py-2 py-lg-0">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Powyżej</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" aria-expanded="false" aria-haspopup="true">Oświadczenie o ochronie prywatności</a>
+              </li>
+              <!--li class="nav-item">
+                <a href="index.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Ceny</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Lokalizacja</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a href="/our-tutors" class="nav-link fade-page" aria-expanded="false" aria-haspopup="true">More Teachers</a>
+                </li> -->
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Czy szukasz
+                  odpowiedź?</a>
+              </li>
+            </ul>
+          </div><a href="index.html" class="btn btn-primary ml-lg-3">Skontaktuj się z nami</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section class="bg-dark text-light header-inner p-0 jarallax o-hidden" data-overlay="" data-speed="0.2">
+    <img src="./images/Ewa_Bem_2017.jpg" alt="Ewa Bem Singing" class="jarallax-img opacity-30">
+    <div class="container py-0 layer-2">
+      <div class="row my-4 my-md-6">
+        <div class="col-lg-9 col-xl-8">
+          <!--  <p class="lead mb-0">Willkommen bei</p>-->
+          <p>
+          <h1 class="display-4">
+            Naucz się śpiewać z Ewą Bem: Twoja podróż do mistrzostwa wokalnego</h1>
+          </p>
+          <p class="lead mb-0">
+            Witam, nazywam się Ewa Bem i jestem profesjonalną piosenkarką. Zapraszam zarówno początkujących
+                         a także zaawansowani uczniowie śpiewu na moich zajęciach. Celem jest pomoc uczniom na wszystkich poziomach
+                         rozwijać siłę głosu, zakres i pewność siebie.</p>
+          <br>
+          <a href="index.html" class="btn btn-primary shadow lift mr-1">
+            Czytaj więcej
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="decoration-wrapper">
+
+    </div>
+    <div class="divider">
+      **Polityka poufności strony internetowej lekcji śpiewu z korepetytorką Ewą Bem**<!--<img src="images/divider-3.svg" alt="graphical divider" data-inject-svg="">-->
+    </div>
+  </section>
+  <section>
+    <div class="container py-0 layer-2" style="font-size: 70%">
+    
+    <h2>Polityka Poufności Strony Internetowej Lekcji Śpiewu z Korepetytorką Ewą Bem</h2>
+
+    <p><strong>Data Wejścia w Życie:</strong> 12.02.2024</p>
+
+    <h2>1. Wstęp:</h2>
+    <p>Niniejsza Polityka Poufności określa zobowiązanie [Nazwa Twojej witryny internetowej], z udziałem głównej nauczycielki Ewy Bem (zwanej „my”, „nasz” lub „nas”), do zachowania poufności i prywatności danych osobowych zebranych od użytkowników uczestniczących na lekcjach śpiewu u Ewy Bem.</p>
+
+    <h2>2. Zbieranie informacji:</h2>
+    <p>Możemy zbierać dane osobowe, takie jak imiona i nazwiska, adresy e-mail oraz nagrania wideo lekcji śpiewu, od użytkowników, którzy biorą udział w lekcjach z Ewą Bem. Ponadto możemy zbierać dane nieosobowe związane z interakcjami użytkowników z naszą witryną.</p>
+
+    <h2>3. Wykorzystanie informacji:</h2>
+    <p>Zebrane informacje wykorzystujemy wyłącznie w celu zapewnienia wysokiej jakości lekcji śpiewu z Ewą Bem. To zawiera:</p>
+    <ul>
+        <li>Personalizacja doświadczenia edukacyjnego</li>
+        <li>Wysyłanie odpowiednich komunikatów dotyczących lekcji</li>
+        <li>Udoskonalanie naszych usług</li>
+        <li>Przestrzeganie obowiązków prawnych</li>
+    </ul>
+
+    <h2>4. Poufność i bezpieczeństwo:</h2>
+    <p>Dbamy o zachowanie poufności informacji o użytkownikach, zwłaszcza nagrań wideo z lekcji. Nagrania te są bezpiecznie przechowywane i dostępne wyłącznie dla upoważnionego personelu bezpośrednio zaangażowanego w prowadzenie zajęć.</p>
+
+    <h2>5. Ujawnianie informacji stronom trzecim:</h2>
+    <p>Nie sprzedajemy, nie handlujemy ani w żaden inny sposób nie przekazujemy danych osobowych, w tym nagrań lekcji, osobom trzecim bez wyraźnej zgody użytkownika, z wyjątkiem przypadków wymaganych przez prawo lub w celu realizacji celów prowadzenia lekcji śpiewu.</p>
+
+    <h2>6. Zgoda:</h2>
+    <p>Biorąc udział w lekcjach śpiewu z Ewą Bem za pośrednictwem naszej strony internetowej i podając dane osobowe, użytkownicy wyrażają zgodę na warunki określone w niniejszej Polityce poufności.</p>
+
+    <h2>7. Wykorzystanie nagrań lekcji:</h2>
+    <p>Nagrania wideo lekcji mogą być wykorzystywane do celów szkoleń wewnętrznych, zapewnienia jakości i doskonalenia metod nauczania. Nie będą one jednak udostępniane publicznie ani wykorzystywane w celach promocyjnych bez wyraźnej zgody użytkownika.</p>
+
+    <h2>8. Zmiany w niniejszej Polityce:</h2>
+    <p>Zastrzegamy sobie prawo do aktualizacji lub modyfikacji niniejszej Polityki poufności w dowolnym momencie. O istotnych zmianach użytkownicy będą informowani za pośrednictwem strony internetowej lub za pośrednictwem poczty elektronicznej.</p>
+
+    <h2>9. Informacje kontaktowe:</h2>
+    <p>W przypadku pytań lub wątpliwości dotyczących niniejszej Polityki Poufności prosimy o kontakt pod adresem <a href="mailto:ewa-bam@singpoland.pl">ewa-bam@singpoland.pl</a></p>
+
+    <p>Uczestnicząc w lekcjach śpiewu z Ewą Bem za pośrednictwem naszej strony internetowej, użytkownicy wyrażają zgodę na warunki określone w niniejszej Polityce Poufności. Niniejsza polityka może ulegać zmianom i zachęca się użytkowników do okresowego przeglądania jej.</p>
+
+</div>
+  </section>
+ 
+  <footer class="pb-5 bg-primary-3 text-light" id="footer">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col">
+
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-xl-10">
+          <small class="text-muted">©<span id="year"></span> • All rights
+            reserved • <a href="#">Oświadczenie o ochronie prywatności</a> •
+            <a href="#">Polityka Cookie</a> •
+            <a href="#">Warunki korzystania</a> •
+          </small>
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+</body>
+
+</html>
